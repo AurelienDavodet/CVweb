@@ -1,13 +1,16 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+
+img{
+    height:220px;
+    width:160px;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
+
 ul,ol{
     list-style:none;
 }
@@ -24,7 +27,7 @@ section .heading h2{
 .red-divider{
     width: 100px;
     height: 2px;
-    background: #FF8C00;
+    background: #000;
     margin: 0 auto 20px;
 
 }
@@ -38,7 +41,7 @@ section .heading h2{
 
 /* MENU */
 .navbar {
-    background-color: #FF8C00;
+    background-color: #000;
     font-size: 12px;
     border-bottom: 1px solid #fff;
     letter-spacing: 4px;
@@ -50,7 +53,7 @@ section .heading h2{
     text-align: center;
 }
 .nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-    color: #FF8C00 !important;
+    color: #000 !important;
     background-color: #fff !important;
 }
 .navbar-toggler{
@@ -66,65 +69,45 @@ section .heading h2{
     background-image: url("../images/duotone2.png");
 }
 
+#about.img{
+     width: 150px;
+  height: 210px;
+}
+
 
 .profile-picture{
     text-align: center;
     margin: 0 auto;
     float: none;
 }
-#about .heading h1{
+
+
+
+/* Parcours */
+#parcours{
+    background: #000;
+}
+
+.thumbnail{
+    background-color:white;
+    width:95%; 
+    border-radius:10px;
+    box-shadow: 4px 2px 2px grey;
+}
+
+#parcours h2{
     color: #fff;
-
-    margin-top: 20px;
-}
-#about .heading h3{
-    color: #fff;
-}
-.button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid white;
-    display: inline-block;
-    margin-top:  20px;
-    padding: 18px 50px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in 0s;
-}
-.button1:hover{
-    background: white;
-    color: #FF8C00;
-    text-decoration: none;
 }
 
-/* SKILLS */
-#skills{
-    background: #FF8C00;
-}
-
-#skills .heading h2 {
-    color: #FF8C00;
-}
-#skills .progress{
-    height: auto;
-    margin: 30px 20px;
-    background: #ddd;
-}
-#skills .progress-bar{
-    background: #FF8C00;
-}
-#skills .progress h5{
-    margin-top: 5px;
-    text-shadow: 1px 1px 1px #fff;
-}
 
 
 /* EXPERIENCE */
 #experience{
     background: #fff;
 }
-#experience .heading h2{
-    color: #fff;
+
+#experience h2{
+    color: #000;
 }
 .timeline{
     padding: 30px 10px;
@@ -152,7 +135,7 @@ section .heading h2{
     display: table;
 }
 .timeline li .timeline-badge{
-    color: #FF8C00;
+    color: #000;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -209,107 +192,31 @@ section .heading h2{
     font-size: 20px;
 }
 .timeline-heading h4{
-     color: #FF8C00;
+     color: #000;
 }
 
 
-/* EDUCATION */
-#education{
-    background: #fff;
-}
-#education .heading h2{
-    color: #FF8C00;
-}
-.education-block{
-    width:90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px;
-    background: #ddd;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    margin-bottom: 20px;
 
-}
-.education-block h5{
-    color: #888;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.education-block .fas{
-    font-size: 35px;
-}
-.education-block h3{
-     color: #FF8C00;
-}
-.education-block h4{
-   margin-bottom: 20px;
-}
-.education-block p{
-  font-weight: bold;
-}
-.education-block .red-divider{
-    margin-bottom: 20px;
-}
 
 
 /* PORTFOLIO */
-#portfolio{
-    background: #fff;
-}
-#portfolio .heading h2{
-    color: #fff;
-}
-#portfolio img{
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
-}
-#portfolio img:hover{
-     filter: none;
-    -webkit-filter: none; 
-}
-#portfolio .col-md-4{
-    margin-bottom: 20px;
-}
+
 
 
 /* RECOMMANDATIONS */
-#recommandations{
-    background: #fff;
-}
-#recommandations .heading h2{
-    color: #000;
-}
-.fas.fa-chevron-left, .fas.fa-chevron-right{
-    background-image: none;
-    color: #FF8C00;
-}
-.carousel-indicators{
-    bottom: 0px;
-}
-.carousel-indicators li{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    border: 1px solid #FF8C00;
-}
-.carousel-indicators li.active{
-    background-color: #FF8C00;
-}
-#myCarousel .carousel-item{
-    padding: 40px 30px;
-}
-#myCarousel .carousel-item h3{
-    color: #FF8C00;
-    font-style: italic;
-}
 
 /* hobbies */
 #hobbies{
-    background: #FF8C00;
+    background: #000;
 }
+#hobbies .heading h2 {
+    color: #fff;
+}
+
+#hobbies.p {
+    color: #fff;
+}
+
 
 
 /* FOOTER */
@@ -320,7 +227,7 @@ footer{
 footer .fas{
     font-size:  25px;
     margin: 20px;
-    color: #FF8C00;
+    color: #000;
     height: 30px;
 }
 footer .fas:hover{
